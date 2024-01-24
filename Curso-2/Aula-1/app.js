@@ -6,7 +6,7 @@
 /*   By: gacalaza <gacalaza@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 19:54:49 by gacalaza          #+#    #+#             */
-/*   Updated: 2024/01/23 22:22:23 by gacalaza         ###   ########.fr       */
+/*   Updated: 2024/01/24 16:31:04 by gacalaza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,9 @@ let	tries = 1;
 function	put_text(tag, text) {
 	let	field = document.querySelector(tag);
 	field.innerHTML = text;
+	responsiveVoice.speak(text, 'Brazilian Portuguese Female', {rate:1.2});
+	// responsiveVoice.speak(text, 'UK English Female', {rate:1.2});
+	// responsiveVoice.speak(text, 'US English Female', {rate:1.2});
 }
 
 function	startMessage() {
