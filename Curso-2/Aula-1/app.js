@@ -6,7 +6,7 @@
 /*   By: gacalaza <gacalaza@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 19:54:49 by gacalaza          #+#    #+#             */
-/*   Updated: 2024/01/23 14:48:06 by gacalaza         ###   ########.fr       */
+/*   Updated: 2024/01/23 22:22:23 by gacalaza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 // paragraph.innerHTML = 'Choose a number between 1 and 10';
 
 // let	secretNumber = 10;
+let	listOfSortedNumbers = [];
+let	maxElements = 10;
 let	secretNumber = generateNumber();
 let	tries = 1;
 
@@ -27,7 +29,7 @@ function	put_text(tag, text) {
 
 function	startMessage() {
 	put_text('h1', 'Secret Number Game');
-	put_text('p', 'Choose a number between 1 and 10');
+	put_text('p', `Choose a number between 1 and ${maxElements}`);
 }
 
 startMessage();
@@ -39,7 +41,7 @@ function	verifyGuess() {
 	// console.log(secretNumber == guess);
 	if (guess == secretNumber) {
 		let	word = tries > 1 ? 'tries' : 'try';
-		let	message = `You're right! You discovered the secret number in ${tries} ${word}.`;
+		let	message = `You're right! It is ${secretNumber}. You discovered the secret number in ${tries} ${word}.`;
 		put_text('h1', message);
 		put_text('p', 'Congratulations!');
 		document.getElementById('reiniciar').removeAttribute('disabled');
@@ -57,7 +59,21 @@ function	verifyGuess() {
 }
 
 function	generateNumber() {
-	return parseInt(Math.random() * 10 + 1);
+	let	chosenNbr = parseInt(Math.random() * maxElements + 1);
+	let	amountListElements = listOfSortedNumbers.length;
+
+	if (amountListElements == maxElements) {
+		listOfSortedNumbers = [];
+	}
+	if (listOfSortedNumbers.includes(chosenNbr)) {
+		return generateNumber();
+	}
+	else {
+		listOfSortedNumbers.push(chosenNbr)
+		console.log(listOfSortedNumbers);
+		return chosenNbr;
+	}
+	// return parseInt(Math.random() * 10 + 1);
 }
 
 function	cleanField() {
