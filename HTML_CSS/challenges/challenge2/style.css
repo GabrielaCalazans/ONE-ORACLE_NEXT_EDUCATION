@@ -1,18 +1,46 @@
 h1 {
-    color: rgb(156, 14, 212);
-    /* Adicionar mais estilos conforme necessário */
+	color: rgb(222, 207, 228);
+	/* Adicionar mais estilos conforme necessário */
 }
 p {
-    color: rgb(92, 80, 80);
-    /* Adicionar mais estilos conforme necessário */
+	color: rgb(145, 122, 122);
+	/* Adicionar mais estilos conforme necessário */
 }
 button {
-    background-color: ciano;
-    color: rgb(231, 187, 187);
-    border: none;
-    /* Adicionar mais estilos conforme necessário */
+	background-color: ciano;
+	color: rgb(161, 153, 197);
+	border: none;
+	/* Adicionar mais estilos conforme necessário */
+}
+body {
+	background-color: rgb(39, 10, 10);
+	color: rgb(233, 222, 222);
 }
 img {
-    /* Adicionar estilos para formatar a imagem */
+	/* Adicionar estilos para formatar a imagem */
 }
 /* Adicionar mais estilos conforme necessário */
+
+footer {
+	background-color: gray;
+	color: white;
+}
+
+a {
+	color: DodgerBlue;
+
+}
+
+strong {
+	color: #22d4fd;
+}
+
+h1{
+	font-weight: bold;
+}
+
+span{
+	color: #22D4FD;
+	border: 1px solid #22D4FD;
+	padding: 10px;
+}
