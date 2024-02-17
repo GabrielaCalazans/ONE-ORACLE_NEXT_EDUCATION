@@ -1,0 +1,18 @@
+h1 {
+    color: rgb(156, 14, 212);
+    /* Adicionar mais estilos conforme necessário */
+}
+p {
+    color: rgb(92, 80, 80);
+    /* Adicionar mais estilos conforme necessário */
+}
+button {
+    background-color: ciano;
+    color: rgb(231, 187, 187);
+    border: none;
+    /* Adicionar mais estilos conforme necessário */
+}
+img {
+    /* Adicionar estilos para formatar a imagem */
+}
+/* Adicionar mais estilos conforme necessário */
