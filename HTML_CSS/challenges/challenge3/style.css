@@ -1,0 +1,36 @@
+body {
+	background-color: rgb(27, 24, 24);
+	color: rgb(236, 226, 216);
+	box-sizing: border-box;
+	align-items: center;
+	height: 100vh;
+    width: 100%;
+	
+}
+
+.presentation {
+	display: flex;
+	/* justify-content: space-between; */
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.texto-destaque {
+	color: #22d4fd;
+}
+
+.titulo-blog {
+	color: #fd4322;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 20px;
+	border: 5px solid rgb(248, 66, 66);
+	padding: 10px;
+}
