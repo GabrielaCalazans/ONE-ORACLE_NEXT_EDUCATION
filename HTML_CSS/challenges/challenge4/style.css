@@ -81,7 +81,14 @@ h1 {
     width: 378px;
 	text-align: center;
 	text-decoration: none;
+	display: flex;
+	gap: 16px;
+	justify-content: center;
 	padding: 21.5 0;
+}
 
-
+.presentation__content__links__button:hover {
+	background-color: #0000FF;
+	padding: 2%;
+	cursor: alias;
 }
