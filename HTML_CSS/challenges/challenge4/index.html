@@ -105,6 +105,103 @@ cabeçalho, o que pode afetar a legibilidade e a estética do site. Sua tarefa �
 dos links "Home" e "Sobre mim" para garantir que eles tenham um espaçamento adequado em torno do texto. Isso tornará o 
 cabeçalho mais atraente e fácil de usar. -->
 
+<!-- #################################### Challenge 4 ############################################################### -->
+
+<!-- Crie mais uma página em seu projeto e construa nela o seu currículo.
+Você pode seguir a estrutura dos currículos tradicionais, com suas informações no topo e sua estrutura dividida em 
+seções, ou você pode soltar sua criatividade e fazer algo totalmente diferente, fica a seu critério.
+É importante que nessa página currículo você adicione uma imagem sua e crie pelo menos uma lista HTML, 
+que contenha suas experiências de trabalho ou estudos.
+Além disso, pode ser interessante adicionar outros projetos caso você tenha.
+Lembre-se: não tenha medo de personalizar esta página, afinal é o seu currículo e quanto mais tiver 
+“a sua cara”, melhor -->
+
+<!-- SALVEI UM ARQUIVO TIPS COM DICAS PRA MONTAR O CURRICULO ACIMA CITADO -->
+
+<!-- #################################### Challenge 5 ############################################################### -->
+
+<!-- 1) Estilizando o cabeçalho com CSS
+Imagine que você trabalha com desenvolvimento front-end trabalhando em um projeto de website. 
+O seu desafio é estilizar o cabeçalho da página de acordo com as especificações fornecidas. 
+Utilize o arquivo style.css para aplicar as propriedades CSS no cabeçalho.
+
+2) Ajustando o espaçamento do conteúdo
+Agora, como quem trabalha com desenvolvimento, seu próximo desafio é ajustar o espaçamento do 
+conteúdo da página para que se alinhe corretamente com o cabeçalho.
+
+3) Criando e navegando para a página "Sobre mim"
+Você está trabalhando em um projeto de site pessoal e precisa adicionar uma página "Sobre mim". 
+Para isso, você deve criar um novo arquivo HTML, chamado about.html, e configurar um link no 
+menu de navegação do seu site principal (index.html) para redirecionar para esta nova página. 
+Além disso, ajuste o cabeçalho da página about.html para que o título da aba seja “Sobre mim” 
+e adicione um <h1> com o texto "Sobre mim" no corpo da nova página. Certifique-se de que a 
+	navegação entre a página principal e a página "Sobre mim" esteja funcionando corretamente.
+
+4) Ajustando a estilização após reorganização de arquivos
+Você percebeu que, após mover o arquivo styles.css para uma nova pasta chamada "styles", a 
+estilização do seu site foi perdida. Para corrigir isso, você deve atualizar o caminho do arquivo 
+CSS no seu arquivo index.html. Além disso, no arquivo styles.css, você deve remover o sublinhado 
+dos links no cabeçalho do site. Após estas correções, verifique se a estilização foi aplicada 
+corretamente e se os links do cabeçalho não estão mais sublinhados.
+
+5) Estruturando a página "Sobre mim" com cabeçalho e rodapé
+Nesta atividade, você irá estruturar a página "Sobre mim" do seu projeto, reutilizando o cabeçalho 
+e o rodapé da página inicial (index.html). Primeiro, copie o <header> e o <footer> do index.html 
+	e cole-os no arquivo about.html. Em seguida, adicione uma seção <main> vazia entre o <header> 
+		e o <footer>. Por fim, verifique se a estrutura copiada está funcionando corretamente no 
+			navegador, com os links de navegação e o texto do rodapé aparecendo.
+
+6) Importando e corrigindo o caminho do arquivo CSS na página "Sobre mim"
+O objetivo desta atividade é importar o arquivo de estilos styles.css na página "Sobre mim" e 
+corrigir o caminho do arquivo para refletir a estrutura de pastas atual. No arquivo about.html, 
+adicione a tag <link> para importar o styles.css. Lembre-se de que o arquivo CSS foi movido para 
+uma pasta chamada "styles", então o caminho do href na tag <link> precisa ser atualizado para 
+"./styles/styles.css". Após essa correção, salve o arquivo e recarregue a página no navegador para 
+verificar se os estilos foram aplicados corretamente. -->
+
+<!-- #################################### Challenge 6 ############################################################### -->
+
+<!-- 1) Adicionando conteúdo à página "Sobre mim"
+Nesta atividade, você adicionará o conteúdo principal na página "Sobre mim" do seu projeto. Primeiro, no arquivo about.html,
+ localize o <main> vazio e crie uma <section> para armazenar o conteúdo da página. Dentro desta <section>, adicione um <h1> 
+com o texto "Sobre mim" e dois parágrafos (<p>), utilizando o atalho p*2 seguido de "Enter" para criar ambos. 
+Em seguida, volte ao Figma para copiar o texto de "Lorem ipsum" e cole-o nos parágrafos correspondentes.
+Por fim, adicione uma imagem ao lado dos parágrafos, copiando o código da imagem da página inicial e colando-o no about.html.
+
+2) Aplicando estilos à página "Sobre mim"
+Após adicionar o conteúdo principal, você deverá aplicar estilos à página "Sobre mim". Primeiro, atribua classes apropriadas 
+aos elementos dentro do <main>: adicione a classe "apresentacao" ao <main>, "apresentacao__conteudo" à <section>, 
+"apresentacao__conteudo__titulo" ao <h1> e "apresentacao__conteudo__texto" aos parágrafos. Utilize a técnica de seleção
+múltipla (segurando "Alt" e clicando) para adicionar a mesma classe a ambos os parágrafos simultaneamente. 
+Após adicionar as classes, salve o arquivo e visualize no navegador para conferir o alinhamento e a estilização dos elementos.
+
+3) Definindo variáveis de cores no CSS
+Nesta atividade, você vai definir variáveis globais no CSS para as cores principais do seu projeto. Abra o arquivo style.css 
+no VS Code e adicione a pseudoclasse :root no início do arquivo, acima de todos os blocos de código. Dentro do :root, defina 
+três variáveis: --cor-primaria para a cor preta (#000000), --cor-secundaria para o branco (#F6F6F6) e --cor-terciaria para 
+o azul ciano (#22D4FD). Este processo permite que você altere facilmente as cores principais do projeto alterando apenas essas 
+variáveis.
+
+4) Aplicando as variáveis de cores no projeto
+Depois de definir as variáveis de cores, o próximo passo é aplicá-las em todo o projeto. Procure no arquivo style.css onde as 
+cores originais foram usadas (utilize "Ctrl + F" para pesquisar pelas cores hexadecimais). Substitua todas as ocorrências das 
+cores hexadecimais pelas variáveis correspondentes que você definiu. Por exemplo, substitua todas as ocorrências de #000000 
+por var(--cor-primaria). Isso garantirá que, se as cores principais precisarem ser alteradas no futuro, você só terá que 
+alterá-las uma vez nas variáveis globais, simplificando a manutenção do código.
+
+5) Aplicando variáveis CSS para cores e fontes
+Nesta atividade, você irá revisar e aplicar as variáveis CSS criadas para gerenciar as cores e fontes do seu projeto. 
+Inicie abrindo o arquivo style.css e substitua os valores hexadecimais das cores e das fontes pelas variáveis CSS 
+correspondentes. Por exemplo, onde você encontra a cor #22D4FD, substitua por var(--cor-terciaria). Faça isso para todas 
+as instâncias onde as cores primária, secundária, terciária e hover são utilizadas, bem como para as fontes primária e secundária.
+
+6) Testando a flexibilidade das variáveis CSS com uma nova paleta de cores
+Nesta atividade, você testará a flexibilidade das variáveis CSS alterando a paleta de cores do projeto. Acesse o site Color 
+Hunt e escolha uma nova paleta de cores. Copie os valores hexadecimais das cores escolhidas e substitua-os nas variáveis 
+CSS dentro do :root no arquivo style.css. Por exemplo, altere o valor de --cor-primaria para o novo valor de cor escolhido. 
+Após alterar todas as cores, salve o arquivo e visualize o projeto no navegador para ver as mudanças. Esta atividade 
+demonstrará como as variáveis CSS podem facilitar a manutenção e alteração do design de um projeto. -->
+
 
 <!DOCTYPE html>
 <html lang="eng">
