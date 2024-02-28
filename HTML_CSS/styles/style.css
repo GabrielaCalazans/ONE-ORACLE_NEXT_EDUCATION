@@ -17,6 +17,23 @@
 	padding: 0;
 }
 
+.header {
+	padding: 2% 0 0 15%
+}
+
+.header__menu {
+	display: flex;
+	gap: 80px;
+}
+
+.header__menu__link {
+	font-family: var(--secondary-font);
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: var(--tertiary-color);
+	text-decoration: none;
+}
+
 body {
 	box-sizing: border-box;
 	/* height: 100vh; */
@@ -30,19 +47,20 @@ body {
 	/* margin: 10% 15%; */
 	padding: 9% 15%;
 	display: flex;
+	gap: 82px;
 	align-items: center;
 	justify-content: space-evenly;
 }
 
 .presentation__content {
-	width: 615px;
+	width: 50%;
 	display: flex;
 	gap: 40px;
 	flex-direction: column;
 }
 
 .presentation__content__title {
-	font-size: 36px;
+	font-size: 2.25rem;
 	font-family: var(--prime-font);
 	/* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
@@ -53,7 +71,7 @@ body {
 }
 
 .presentation__content__paragraph {
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-family: var(--secondary-font);
 }
 
@@ -66,7 +84,7 @@ body {
 }
 
 .presentation__links_subtitle {
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 400;
 	font-family: var(--prime-font);
 }
@@ -76,10 +94,10 @@ body {
 	border: solid 2px;
 	/* border-color: #22d4fd; */
 	border-color: var(--tertiary-color);
-	width: 381px;
+	width: 50%;
 	text-align: center;
 	border-radius: 8px;
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 600;
 	padding: 21.5px 0;
 	text-decoration: none;
@@ -97,38 +115,44 @@ body {
 }
 
 .presentation__content__title:hover {
-	background-color: #993399;
+	background-color: #661e66;
+}
+
+.presentation__img {
+	width: 50%;
 }
 
 .presentation__content__paragraph:hover {
 	background-color: var(--houver-color);
 }
 
-.header {
-	padding: 2% 0 0 15%
-}
-
-.header__menu {
-	display: flex;
-	gap: 80px;
-}
-
-.header__menu__link {
-	font-family: var(--secondary-font);
-	font-weight: 600;
-	font-size: 24px;
-	color: var(--tertiary-color);
-	text-decoration: none;
-}
-
 .footer {
 	/* margin: 28px; */
 	padding: 28px;
 	color: var(--tertiary-color);
-	background-color: #993399;
+	background-color: #661e66;
 	font-family: var(--secondary-font);
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 400;
 	/* display: flex;
 	justify-content: left; */
+}
+
+@media (max-width: 1200px) {
+	.header {
+		padding: 10%;
+	}
+
+	.header__menu {
+		justify-content: center;
+	}
+
+	.presentation {
+		flex-direction: column-reverse;
+		padding: 5%;
+	}
+
+	.presentation__content {
+		width: auto;
+	}
 }
