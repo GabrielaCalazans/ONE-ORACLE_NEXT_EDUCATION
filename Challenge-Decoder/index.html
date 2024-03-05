@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Challenge-Decoder</title>
 </head>
-<body>
+<body class="body">
+	<header>
+		<img class="aluraLogo" src="./assets/Logo.png" alt="alura's logo">
+	</header>
 	<main class="main">
-		<img src="" class="logo" />
 		<section>
-			<textarea class="text-input"></textarea>
-			<div class="forme-group">
-				<img src="" class="">
+			<textarea class="textArea" cols="41" rows="4" placeholder="Enter your text"></textarea>
+			
+			<div class="information">
+				Insert only letters, uppercase or lowercase. 
+				Do not insert special characters or accented letters.
 				<label for=""></label>
 			</div>
-			<div class="botões-div">
-				<button class="btn-criptografar">
-					Criptografar
+			
+			<div class="buttons">
+				<button class="btn-encrypt">
+					Encrypt
 				</button>
-				<button class="btn-descriptografar">
-					Descriptografar
+				<button class="btn-decrypt">
+					Decrypt
 				</button>
 			</div>
+
 		</section>
-	</main>	
+
+		<section>
+			<textarea class="message" cols="20" rows="10"></textarea>
+			<button class="btn-copy">
+				Copy
+			</button>
+		</section>
+	</main>
+	<!-- <footer>
+		<p class="footer">Developed by Gab! Calazans</p>
+	</footer> -->
 </body>
 
 </html>
