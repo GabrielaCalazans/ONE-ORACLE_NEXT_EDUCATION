@@ -1,50 +1,72 @@
-// const input_text = document.querySelector("miniput-text");
-// const input_message = document.querySelector("miniput-message");
+const textArea = document.querySelector(".text-area");
+const message = document.querySelector(".message");
 
-// // metodo manipulação string - replace do js
-// let	matriz_code = {
-// 	["a", "enter"],
-// 	["i", "imes"],
-// 	["a", "ai"],
-// 	["o", "ober"],
-// 	["u", "ufat"]
-// };
-
-function	btnCriptografar() {
+function	btnEncrypt() {
+	const	encryptedText = encrypt(textArea.value);
+	message.value = encryptedText;
+	textArea.value = "";
 
 }
 
 let	test = "text de test";
 let	testCriptografado = "tenderxtober denter";
 
-function	criptogragar(string) {
-	// for (let i = 0/ i < matriz_code.lenght; i++;) {
-	// 	if (string.includes(matriz_code[i][0])) {
-	// 		let	stringCriptografada = string.replaceAll(matriz_code[i][0], matriz_code[i][1]);
-	// 	}
-	const	result = string
-	.replaceAll("a", "enter")
-	.replaceAll("i", "imes")
-	.replaceAll("a", "ai")
-	.replaceAll("o", "ober")
-	.replaceAll("u", "ufat");
+// A letra "e" é convertida para "enter"
+// A letra "i" é convertida para "imes"
+// A letra "a" é convertida para "ai"
+// A letra "o" é convertida para "ober"
+// A letra "u" é convertida para "ufat"
 
+// function	encrypt(string) {
+// 	const	result = string.toLowerCase()
 
-	return result;
+// 	if (result.includes("e")) {
+// 		result = result.replaceAll("e", "enter");
+// 	}
+// 	if (result.includes("i")) {
+// 		result = result.replaceAll("i", "imes");
+// 	}
+// 	if (result.includes("a")) {
+// 		result = result.replaceAll("a", "ai");
+// 	}
+// 	if (result.includes("o")) {
+// 		result = result.replaceAll("o", "ober");
+// 	}
+// 	if (result.includes("u")) {
+// 		result = result.replaceAll("u", "ufat");
+// 	}
+// 	return result;
+// }
+
+function encrypt(string) {
+	let	matrix = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
+	string = string.toLowerCase();
+
+	for (i = 0; i < string.lenght; i++) {
+		if (string.includes(matrix[i][0])) {
+			string = string.replaceAll(matrix[i][0], matrix[i][1])
+		}
+	}
+	return string;
 }
 
-function	criptogragar(string) {
-	// for (let i = 0/ i < matriz_code.lenght; i++;) {
-	// 	if (string.includes(matriz_code[i][0])) {
-	// 		let	stringCriptografada = string.replaceAll(matriz_code[i][0], matriz_code[i][1]);
-	// 	}
-	const	result = string
-	.replaceAll("enter", "e")
-	.replaceAll("imes", "i")
-	.replaceAll("ai", "a")
-	.replaceAll("ober", "o")
-	.replaceAll("ufat", "u");
+function	decrypt(string) {
+	const	result = string.toLowerCase()
 
-
+	if (result.includes("enter")) {
+		result = result.replaceAll("enter", "e");
+	}
+	if (result.includes("imes")) {
+		result = result.replaceAll("imes", "i");
+	}
+	if (result.includes("ai")) {
+		result = result.replaceAll("ai", "a");
+	}
+	if (result.includes("ober")) {
+		result = result.replaceAll("ober", "o");
+	}
+	if (result.includes("ufat")) {
+		result = result.replaceAll("ufat", "u");
+	}
 	return result;
 }

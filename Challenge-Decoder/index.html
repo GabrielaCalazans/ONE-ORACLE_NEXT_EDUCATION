@@ -8,40 +8,48 @@
 	<title>Challenge-Decoder</title>
 </head>
 <body class="body">
-	<header>
-		<img class="aluraLogo" src="./assets/Logo.png" alt="alura's logo">
+	<header class="header">
+		<!-- <img class="aluraLogo" src="./assets/Logo.png" alt="alura's logo"> -->
+		Decoder
 	</header>
 	<main class="main">
-		<section>
-			<textarea class="textArea" cols="41" rows="4" placeholder="Enter your text"></textarea>
-			
-			<div class="information">
-				Insert only letters, uppercase or lowercase. 
-				Do not insert special characters or accented letters.
-				<label for=""></label>
+		<section class="content">
+			<div>
+				<textarea class="textArea" cols="35" rows="17" placeholder=" Enter your text"></textarea>
+				<div class="information">
+					Insert only lowercase letters.
+					Do not insert special characters or accented letters.
+					<label for=""></label>
+				</div>
+				
+				<div class="buttons">
+					<button class="btn-encrypt" onclick="btnEncrypt()">
+						Encrypt
+					</button>
+					<button class="btn-decrypt" onclick="btnDecrypt()">
+						Decrypt
+					</button>
+				</div>
 			</div>
-			
-			<div class="buttons">
-				<button class="btn-encrypt">
-					Encrypt
-				</button>
-				<button class="btn-decrypt">
-					Decrypt
-				</button>
+			<div class="copy">
+				<textarea class="message" cols="35" rows="17"></textarea>
+				<div class="unsee">
+
+
+					<label for=""></label>
+				</div>
+				<div class="button-copy">
+					<button class="btn-copy" onclick="btnCopy()">
+						Copy
+					</button>
+				</div>
 			</div>
-
-		</section>
-
-		<section>
-			<textarea class="message" cols="20" rows="10"></textarea>
-			<button class="btn-copy">
-				Copy
-			</button>
 		</section>
 	</main>
-	<!-- <footer>
+	<script src="script.js"></script>
+	<footer>
 		<p class="footer">Developed by Gab! Calazans</p>
-	</footer> -->
+	</footer>
 </body>
 
 </html>
