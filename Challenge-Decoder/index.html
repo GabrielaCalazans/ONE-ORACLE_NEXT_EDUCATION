@@ -9,17 +9,15 @@
 </head>
 <body class="body">
 	<header class="header">
-		<!-- <img class="aluraLogo" src="./assets/Logo.png" alt="alura's logo"> -->
 		Decoder
 	</header>
 	<main class="main">
 		<section class="content">
 			<div>
-				<textarea class="textArea" cols="35" rows="17" placeholder=" Enter your text"></textarea>
+				<textarea class="textArea" id="text" cols="40" rows="17" type="text" placeholder=" Enter your text"></textarea>
 				<div class="information">
 					Insert only lowercase letters.
 					Do not insert special characters or accented letters.
-					<label for=""></label>
 				</div>
 				
 				<div class="buttons">
@@ -30,16 +28,16 @@
 						Decrypt
 					</button>
 				</div>
+			
 			</div>
 			<div class="copy">
-				<textarea class="message" cols="35" rows="17"></textarea>
+				<textarea class="message" cols="34" rows="17"></textarea>
 				<div class="unsee">
 
-
-					<label for=""></label>
 				</div>
 				<div class="button-copy">
-					<button class="btn-copy" onclick="btnCopy()">
+					<p></p>
+					<button class="btn-copy" id="copy" onclick="btnCopy()">
 						Copy
 					</button>
 				</div>
@@ -47,6 +45,7 @@
 		</section>
 	</main>
 	<script src="script.js"></script>
+	<script src="text-area.js"></script>
 	<footer>
 		<p class="footer">Developed by Gab! Calazans</p>
 	</footer>
