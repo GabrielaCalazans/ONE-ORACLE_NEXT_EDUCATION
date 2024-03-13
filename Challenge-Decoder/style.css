@@ -7,6 +7,8 @@
 	--secondary-color: #F6F6F6;
 	--tertiary-color: #22d4fd;
 	--houver-color: #272727;
+	--font--color: #8a59b6;
+	/* #D4A3FF */
 	
 	--prime-font: 'Krona One', sans-serif;
 	--secondary-font: 'Montserrat', sans-serif;
@@ -61,7 +63,7 @@
 .textArea {
 	background-image: linear-gradient(rgb(36, 10, 58), rgb(12, 95, 44));
 	border-radius: 14px;
-	color: #D4A3FF;
+	color: var(--font--color);
 	/* margin: 10px 10px 10px 0; */
 	/* box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.521);
 	/* border-radius: 32px; */
@@ -74,7 +76,7 @@
 	background-repeat: repeat;
 	border: 1px solid #62CEF7;
 	border-radius: 14px;
-	color: #D4A3FF;
+	color: var(--font--color);
 }
 
 .buttons {
@@ -133,8 +135,8 @@
 }
 
 .information {
-	color: #D4A3FF;
-	font-size: 18px;
+	color: #b391d1;
+	font-size: 19px;
 }
 
 .unsee {
@@ -145,6 +147,6 @@
 }
 
 .footer {
-	color: #D4A3FF;
+	color: #380564;
 	font-size: 18px;
 }

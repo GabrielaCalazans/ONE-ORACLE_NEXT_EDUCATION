@@ -12,21 +12,15 @@ function	btnDecrypt() {
 	const	encryptedText = decrypt(textarea.value);
 	message.value = encryptedText;
 	textarea.value = "";
-
 }
 
 function	btnCopy() {
-	let copyText = document.querySelector(".message");
+	let copyText = document.getElementById("message");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
 
-	document.querySelector("#copy").addEventListener("click", function () {
-		navigator.clipboard.writeText(copyText.innerText)
-			.then(function () {
-				alert("Text copied");
-			})
-			.catch(function (err) {
-				console.error('Unable to copy text', err);
-			});
-	});
+	document.execCommand("copy");
+	alert(`Text copied.`);
 }
 
 // let	test = "text de test";
