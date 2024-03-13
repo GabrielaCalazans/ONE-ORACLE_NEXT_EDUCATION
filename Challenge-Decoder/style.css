@@ -72,8 +72,8 @@
 
 .message {
 	background: linear-gradient(rgb(36, 10, 58), rgb(12, 95, 44));
-	background-image: url(./assets/cyberlock4.jpg);
-	background-repeat: repeat;
+	background-image: url(./assets/hlock111.png);
+	background-repeat: no-repeat;
 	border: 1px solid #62CEF7;
 	border-radius: 14px;
 	color: var(--font--color);

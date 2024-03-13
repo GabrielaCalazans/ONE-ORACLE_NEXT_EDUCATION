@@ -1,5 +1,38 @@
-const textarea = document.querySelector(".textArea");
-const message = document.querySelector(".message");
+const	textarea = document.querySelector(".textArea");
+const	message = document.querySelector(".message");
+const	textInput = document.querySelector("#text");
+
+textarea.addEventListener("paste", function () {
+	const regex = /^[0-9a-z\s]+$/;
+	const self = this;
+
+	setTimeout(function() {
+		const text = self.value;
+
+		if (!regex.test(text)) {
+			self.value = "";
+			alert(`Insert only lowercase letters. Do not insert special characters or accented letters.`);
+		}
+	}, 500);
+});
+
+textInput.addEventListener("keypress", function(c) {
+	if (!checkChar(c)) {
+		c.preventDefault();
+		alert(`Insert only lowercase letters. Do not insert special characters or accented letters.`);
+	}
+});
+
+function	checkChar(c) {
+	const	char = String.fromCharCode(c.keyCode);
+	const	pattern = /^[0-9a-z\s]+$/;
+
+	if (char.match(pattern)) {
+		console.log(char);
+		console.log(c.keyCode);
+		return true;
+	}
+}
 
 function	btnEncrypt() {
 	const	encryptedText = encrypt(textarea.value);
